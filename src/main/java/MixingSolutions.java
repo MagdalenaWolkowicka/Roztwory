@@ -8,11 +8,7 @@ public class MixingSolutions {
     private double amountOfSolution2;
     private double concentrationOfTheSolution2;
     private double finalSolutionConcentration;
-    private double amountOfSubstanceInSolution1;
-    private double amountOfSubstanceInSolution2;
-    private double totalAmountOfSubstance;
     private double totalAmountOfSolution;
-    private double amountOfSubstanceInSolution;
 
     private void getConcentrationsAndAmountsOfSolutions() {
         Scanner scanner = new Scanner(System.in);
@@ -40,15 +36,15 @@ public class MixingSolutions {
     }
 
     private double calculateAmountOfSubstanceInSolution(double amountOfSolution, double concentrationOfTheSolution) {
-        amountOfSubstanceInSolution = amountOfSolution * concentrationOfTheSolution / 100;
+        double amountOfSubstanceInSolution = amountOfSolution * concentrationOfTheSolution / 100;
         return amountOfSubstanceInSolution;
     }
 
     private double calculateFinalConcentrationAndAmountOfSolution() {
-        amountOfSubstanceInSolution1 = calculateAmountOfSubstanceInSolution(amountOfSolution1, concentrationOfTheSolution1);
-        amountOfSubstanceInSolution2 = calculateAmountOfSubstanceInSolution(amountOfSolution2, concentrationOfTheSolution2);
+        double amountOfSubstanceInSolution1 = calculateAmountOfSubstanceInSolution(amountOfSolution1, concentrationOfTheSolution1);
+        double amountOfSubstanceInSolution2 = calculateAmountOfSubstanceInSolution(amountOfSolution2, concentrationOfTheSolution2);
 
-        totalAmountOfSubstance = amountOfSubstanceInSolution1 + amountOfSubstanceInSolution2;
+        double totalAmountOfSubstance = amountOfSubstanceInSolution1 + amountOfSubstanceInSolution2;
         totalAmountOfSolution = amountOfSolution1 + amountOfSolution2;
 
         finalSolutionConcentration = totalAmountOfSubstance * 100 / totalAmountOfSolution;

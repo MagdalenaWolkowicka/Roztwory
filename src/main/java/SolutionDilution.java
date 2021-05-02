@@ -6,7 +6,6 @@ public class SolutionDilution {
     private double currentConcentration;
     private double finalConcentration;
     private double expectedAmountOfSolution;
-    private double amountOfSubstance;
     private double amountOfStockSolution;
     private double amountOfWater;
 
@@ -34,7 +33,7 @@ public class SolutionDilution {
     }
 
     public void calculateAmountOfStockSolutionAndWater() {
-        amountOfSubstance = expectedAmountOfSolution * finalConcentration / 100;
+        double amountOfSubstance = expectedAmountOfSolution * finalConcentration / 100;
         amountOfStockSolution = amountOfSubstance * 100 / currentConcentration;
         amountOfWater = expectedAmountOfSolution - amountOfStockSolution;
 

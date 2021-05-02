@@ -4,9 +4,9 @@ public class Solutions {
 
     private boolean exit = false;
 
-    ConcentrationCalculation concentrationCalculation = new ConcentrationCalculation();
-    MixingSolutions mixingSolutions = new MixingSolutions();
-    SolutionDilution solutionDilution = new SolutionDilution();
+    private ConcentrationCalculation concentrationCalculation = new ConcentrationCalculation();
+    private MixingSolutions mixingSolutions = new MixingSolutions();
+    private SolutionDilution solutionDilution = new SolutionDilution();
 
     public void start() {
         System.out.println("~~~~~~~~~~~~~~~~~~");
